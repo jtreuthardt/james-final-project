@@ -4,11 +4,14 @@
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      <h1> {{ members.name }} </h1>
+    <img class="img-fluid" src={{ members.imagebw}} >
+    <p> {{ members.instruments}}, {{ members.tenure}}</p>
+    <p> {{ members.birthdate }} <p>
     </div>
     <div class="col-sm-8">
-      
-
+      <h1> {{ members.name }} </h1>
+      <h5> {{ members.birthplace }}</h5>
+      <p> {{ members.text | safe}} </p>
     </div>
   </div>
 </article>
