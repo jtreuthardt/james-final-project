@@ -1,45 +1,16 @@
 <section>
 <div class="row">
+{% for member in data.members %}
   <div class="col-sm-3 col-md-6">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src= {{ member.imagebw }} class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="freddie-mercury.html" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title"> {{ member.name }} </h5>
+        <p class="card-text"> {{ member.instruments }}</p>
+        <a href="{{ member.slug }}.html" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
-  <div class="col-sm-3 col-md-6">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="brian-may.html" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3 col-md-6">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="roger-taylor.html" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-3 col-md-6">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="john-deacon.html" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
+{% endfor %}
 </div>
 </section>
-
