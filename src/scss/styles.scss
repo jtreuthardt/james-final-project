@@ -1,0 +1,15 @@
+// Custom variable overrides go here
+$theme-colors: ("primary": #d95700);
+$body-bg: #ededed;
+
+// For options, see node_modules/bootstrap/scss/_variables.scss
+// examples:
+// $body-bg: black;
+// $body-color: white;
+// $link-hover-color: grey;
+// $font-family-sans-serif: "Helvetica Neue";
+
+// Import Bootstrap styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Import partials here

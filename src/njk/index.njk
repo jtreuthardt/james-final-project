@@ -4,7 +4,7 @@
 {% block content %}
 
 <div class="container">
-  <div class="row">
+  <div id="text" class="row">
     <div class="col">
     <h1>Welcome to Queen's Landing</h1>
     <p class="author">By James Treuthardt</p>
@@ -20,8 +20,8 @@
       </p>
     </div>
   </div>
-</div>
   {% include "_partials/membercards.njk" %}
-  {% include "_partials/medialist.njk" %}
+  {% include "_partials/carousel.njk" %}
   {% include "_partials/footer.njk" %}
+</div>
 {% endblock %}

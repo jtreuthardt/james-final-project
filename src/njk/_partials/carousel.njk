@@ -1,0 +1,23 @@
+<div class="row">
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+{% for discography in data.discography %}
+    <div class="carousel-item {% if discography == data.discography[0] %} active {% endif %}">
+      <img class= "img-fluid center-block" src="img/discs/{{ discography.image }}" alt="{{ discography.title }}">
+      <div class="carousel-caption">
+        <h5>{{ discography.title }}</h5>
+        <p>{{ discography.year}}</p>
+      </div>
+    </div>
+{% endfor %}
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>

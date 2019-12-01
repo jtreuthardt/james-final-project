@@ -1,13 +1,15 @@
 <div class = "row">
 <ul class="list-unstyled">
 {% for discography in data.discography %}
-  <li class="col-sm-12">
-    <img class="img-fluid" src="img/discs/{{ discography.image }}" alt="Generic placeholder image">
+<div class = "col-sm-4 col-md-12 col-lg-12">
+  <li>
+    <img class="img-fluid" src="img/discs/{{ discography.image }}" alt="{{ discography.title }}">
     <div class="media-body">
       <h5 class="mt-0 mb-1"> {{ discography.title }} </h5>
         {{ discography.year}}
     </div>
   </li>
+</div>
 {% endfor %}
 </ul>
 </div>
