@@ -1,5 +1,14 @@
 .jumbotron {
-  background-color: #A6607c ;
-  border-radius: 0px;
-  padding: 8px
+  background: url(../img/queen-band-wallpaper.jpg) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 200px;
+}
+
+.jumbotron h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #ffffff;
+  position: relative;
+  right: 16px;
+  bottom: 35px;
+  font-size: 29px;
 }
