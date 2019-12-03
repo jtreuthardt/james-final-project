@@ -1,10 +1,12 @@
-<section>
-<div id="cards" class="container">
+<div>
+  <h1 class="member-section">
+  Members
+  </h1>
 <div class="row">
 {% for member in data.members %}
-  <div class="col-sm-3 col-md-6 col-lg-6 mt-3">
+  <div class="col-sm-3 mt-3">
     <div class="card">
-      <img class="img-fluid" src= {{ member.imagebw }} class="card-img-top" alt="...">
+      <img class="d-block w-100" src= {{ member.imagebw }} class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title"> {{ member.name }} </h5>
         <p class="card-text"> {{ member.instruments }}</p>
@@ -14,5 +16,4 @@
   </div>
 {% endfor %}
 </div>
-</div>
-</section>
+

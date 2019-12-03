@@ -1,9 +1,15 @@
+<div class="discography">
+  <h1 class="disc-section">
+  Discography
+  </h1>
+<section>
 <div class="row">
+<div class="col">
 <div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
 {% for discography in data.discography %}
     <div class="carousel-item {% if discography == data.discography[0] %} active {% endif %}">
-      <img class= "img-fluid center-block" src="img/discs/{{ discography.image }}" alt="{{ discography.title }}">
+      <img class= "d-block w-100 center-block" src="img/discs/{{ discography.image }}" alt="{{ discography.title }}">
       <div class="carousel-caption">
         <h5>{{ discography.title }}</h5>
         <p>{{ discography.year}}</p>
@@ -21,3 +27,6 @@
   </div>
 </div>
 </div>
+</div>
+</div>
+<section>
