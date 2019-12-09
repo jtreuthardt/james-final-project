@@ -4,15 +4,17 @@
   </h1>
 <section>
 <div class="row">
-<div class="col">
-<div id="carousel" class="carousel slide" data-ride="carousel">
+<div class="col-sm-6 col-md-8 col-lg-6">
+<div id="carousel" class="carousel slide container" data-ride="carousel">
   <div class="carousel-inner">
+  <div>
+  <h1 class="albums"> Albums </h1>
+  </div>
 {% for discography in data.discography %}
     <div class="carousel-item {% if discography == data.discography[0] %} active {% endif %}">
       <img class= "d-block w-100 center-block" src="img/discs/{{ discography.image }}" alt="{{ discography.title }}">
-      <div class="carousel-caption">
-        <h5>{{ discography.title }}</h5>
-        <p>{{ discography.year}}</p>
+      <div class="carousel-caption d-md-block bg-dark mb-4">
+        <h6>{{ discography.title }} {{ discography.year }} </h6>
       </div>
     </div>
 {% endfor %}
@@ -27,6 +29,11 @@
   </div>
 </div>
 </div>
+<div class="col-sm-6 col-md-4 col-lg-6">
+  <iframe class="graph" title="Queen's Greatest Hits" aria-label="Split Bars" id="datawrapper-chart-5robR" src="//datawrapper.dwcdn.net/5robR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="613"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+</div>
 </div>
 </div>
 <section>
+
+

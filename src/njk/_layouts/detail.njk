@@ -1,12 +1,13 @@
 {% extends '_layouts/base.njk' %}
 
+{% block page_title %} {{ members.name}} {% endblock %}
 {% block content %}
 <article class="container">
   <div class="row">
     <div id="member" class="col-sm-4 left-rail">
     <img class="img-fluid" src={{ members.imagebw}} >
-    <p> {{ members.instruments}}, {{ members.tenure}}</p>
-    <p class="birthdate"> {{ members.birthdate }} <p>
+    <p> {{ members.instruments}} </p> <p> Years Active: {{ members.tenure}}</p>
+    <p class="birthdate"> Birthdate: {{ members.birthdate }} <p>
     </div>
     <div id="bio" class="col-sm-8">
       <h1> {{ members.name }} </h1>
